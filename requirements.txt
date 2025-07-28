@@ -1,0 +1,7 @@
+Django==4.0
+djangorestframework==3.12.4
+
+
+
+
+# pip install djangorestframework

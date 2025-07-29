@@ -1,10 +1,8 @@
 from rest_framework import viewsets
-from .models import Book
-from .serializers import BookSerializer
+from .models import Comment
+from .serializers import CommentSerializer
 
 
-
-class BookViewSet(viewsets.ModelViewSet):
-    queryset = Book.objects.prefetch_related('comments').all()
-    serializer_class = BookSerializer
-    
+class CommentViewSet(viewsets.ModelViewSet):
+    queryset = Comment.objects.select_related('book').all()
+    serializer_class = CommentSerializer

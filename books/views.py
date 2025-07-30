@@ -10,7 +10,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 # خط7:
 # چرا از select_related استفاده شده؟
-#چون در مدل Comment، فیلد book از نوع ForeignKey هست
+#چون مدل Comment، فیلد book از نوع ForeignKey هست
 # یعنی رابطه ManyToOne
 #وقتی از select_related('book') استفاده می‌کنیم، در یک کوئری SQL، اطلاعات مربوط به کتاب هم لود میشه
 # select_related:

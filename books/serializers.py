@@ -3,9 +3,11 @@ from .models import Book, Comment
 
 
 class CommentSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Comment
         fields = ['id', 'text']
+
 
 class BookSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
@@ -13,3 +15,6 @@ class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['id', 'title', 'comments']
+
+
+# many=True یه لیست باشه ن یه ایتم

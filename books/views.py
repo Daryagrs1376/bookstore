@@ -13,6 +13,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 #چون مدل Comment، فیلد book از نوع ForeignKey هست
 # یعنی رابطه ManyToOne
 #وقتی از select_related('book') استفاده می‌کنیم، در یک کوئری SQL، اطلاعات مربوط به کتاب هم لود میشه
+
 # select_related:
 #همه‌ی کامنت‌ها و کتاب‌های مربوطه رو با فقط 1 کوئری ترکیبی میاره
 #فقط 1 کوئری

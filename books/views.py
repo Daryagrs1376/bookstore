@@ -16,3 +16,8 @@ class CommentViewSet(viewsets.ModelViewSet):
 # select_related:
 #همه‌ی کامنت‌ها و کتاب‌های مربوطه رو با فقط 1 کوئری ترکیبی میاره
 #فقط 1 کوئری
+
+
+# all()
+# تمام کامنت‌ها رو بیار.
+

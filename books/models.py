@@ -18,7 +18,7 @@ class Comment(models.Model):
 
 # خط12 :
 # یعنی هر کامنت به یک کتاب مرتبط است. این رابطه‌ی ManyToOne (هر کتاب چند کامنت) است
-#related_name='comments' باعث می‌شود که از طرف کتاب هم بتوانیم به همه کامنت‌ها دسترسی داشته باشی
+# related_name='comments' باعث می‌شود که از طرف کتاب هم بتوانیم به همه کامنت‌ها دسترسی داشته باشی
 # مثل book.comments.all()
 # در این مدل، رابطه book با Book از نوع ForeignKey است  یعنی ManyToOne 
-#
+# f = f string (line16)
